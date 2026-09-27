@@ -2,15 +2,23 @@
 
 int main () {
 
-    int x = 2;
-    int y = 3;
+    int x = 23;
+    int y = 4;
     int z = 0;
     
     //z = x + y;
     //z = x - y;
     //z = x * y;
+    //z = x / y;
+    //z = x % y;
 
-    printf("%d", z);
+    //augmented assignment operator
+    //x+=2
+    //x-=2
+    //x*=2
+    //x/=2
+
+    printf("%d", x);
 
     return 0;   
 
