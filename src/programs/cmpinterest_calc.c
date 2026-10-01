@@ -14,7 +14,7 @@ int main () {
 
 
         // Principal amount
-    printf ("Enter the principal amount (MYR): ");
+    printf ("Enter the principal amount (P): ");
     if (fgets (input, sizeof(input), stdin) == NULL) {
         printf("Error: Invalid input. Please enter a valid number for the principal amount.\n");
         return 1;
@@ -25,7 +25,7 @@ int main () {
         }
 
         // Annual interest rate
-    printf ("Enter the annual interest rate (in percentage): ");
+    printf ("Enter the annual interest rate % (r): ");
         if (fgets (input, sizeof(input), stdin) == NULL) {
             printf("Error: Invalid input. Please enter a valid number for the annual interest rate.\n");
             return 1;
@@ -36,7 +36,7 @@ int main () {
         }
 
         // Years
-    printf ("Enter the number of years: ");
+    printf ("Enter the No.# of years (t): ");
         if (fgets (input, sizeof(input), stdin) == NULL) {
             printf("Error: Invalid input. Please enter a valid number for the number of years.\n");
             return 1;
@@ -47,7 +47,7 @@ int main () {
         }
 
         // Compound interest
-    printf ("Enter the number of times interest is compounded per year: ");
+    printf ("Enter the number of times interest is compounded per year (n): ");
         if (fgets (input, sizeof(input), stdin) == NULL) {
             printf("Error: Invalid input, Please enter a valid number for the number of times interest is compounded per year.\n");
             return 1;
