@@ -19,6 +19,14 @@ int main () {
         scanf("%d", &guess);
         tries++;
 
+        if(guess < answer){
+            printf("Too low!\n");
+        } else if (guess > answer) {
+            printf("Too high!\n");
+        } else {
+            printf("Correct answer!\n");
+        }
+
     } while (guess != answer);
 
     printf("The answer is %d\n", answer);
