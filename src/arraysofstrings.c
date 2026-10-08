@@ -29,15 +29,16 @@ int main () {
 
     // Exercise
 
-    char names[3][25] = {0};
+    char names[5][25] = {0};
+    int rows = sizeof(names) / sizeof(names[0]);
 
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < rows; i++) {
             printf("Enter a name: ");
             fgets(names[i], sizeof(names[i]), stdin);
             names[i][strcspn(names[i], "\n")]  = '\0';
     }
 
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < rows; i++) {
         printf("%s\n", names[i]); 
     }
 
