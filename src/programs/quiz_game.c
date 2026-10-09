@@ -16,6 +16,7 @@ int main () {
     int questionCount = sizeof(questions) / sizeof(questions[0]);
     char guess = '\0';
     int score = 0;
+    char input[100];
 
     printf("--- ASTROLOGY QUIZ ---\n");
 
@@ -23,9 +24,9 @@ int main () {
         printf("\n%s\n", questions[i]);
         printf("\n%s\n", options[i]);
         printf("\nEnter your answer: ");
-        scanf(" %c", &guess);
+        fgets(input, sizeof(input), stdin);
 
-        guess = toupper(guess);
+        guess = toupper(input[0]);
 
         if (guess == answerKey[i]) {
             printf("Correct Answer!\n");
