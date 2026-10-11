@@ -21,5 +21,5 @@ int main () {
 
 void birthday (int* age) {
     //pass by reference
-    (*age)++;
+    (*age)++; // operator precedence
 }
