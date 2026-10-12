@@ -3,7 +3,7 @@
 
 int main () {
 
-    //malloc() = A function that dynamically allocates a specified number of bytes in memory.
+    //malloc(bytes) = A function that dynamically allocates a specified number of bytes in memory.
 
     int number = 0;
 
